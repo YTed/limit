@@ -1,0 +1,81 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7DC2EF33-CB49-45DE-9966-E1BF22F7EA7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ted.Limit.Core.Empty</RootNamespace>
+    <AssemblyName>Ted.Limit.Core.Empty</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DckWindowContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DckWindowContent.Designer.cs">
+      <DependentUpon>DckWindowContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmptyCommand.cs" />
+    <Compile Include="EmptyGroup.cs" />
+    <Compile Include="EmptyMake.cs" />
+    <Compile Include="EmptyTab.cs" />
+    <Compile Include="EmptyTool.cs" />
+    <Compile Include="EmptyToolbar.cs" />
+    <Compile Include="MessageDelivery.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ted.Limit.Common\Ted.Limit.Common.csproj">
+      <Project>{F1B2FE02-6ED2-4947-8F57-9D43D9E69ABD}</Project>
+      <Name>Ted.Limit.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ted.Limit.Core\Ted.Limit.Core.csproj">
+      <Project>{D9DB9E88-ED19-48DA-BE01-AA27F551F548}</Project>
+      <Name>Ted.Limit.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DckWindowContent.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DckWindowContent.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

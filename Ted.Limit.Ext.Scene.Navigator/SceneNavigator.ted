@@ -1,0 +1,12 @@
+[assembly]
+Ted.Limit.Ext.Scene.Navigator.dll
+[version]
+1.0.0.0
+[path]
+bin\debug\Ted.Limit.Ext.Scene.Navigator.dll
+[make]
+Ted.Limit.Ext.Scene.Navigator.NavigatorMake
+[key]
+Scene Navigator
+[resources]
+image

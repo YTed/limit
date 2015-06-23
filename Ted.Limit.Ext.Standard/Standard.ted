@@ -1,0 +1,12 @@
+[assembly]
+Ted.Limit.Ext.Map.Standard.dll
+[version]
+1.0.0.0
+[path]
+bin\debug\Ted.Limit.Ext.Map.Standard.dll
+[make]
+Ted.Limit.Ext.Map.Standard.StandardMake
+[key]
+Standard
+[resources]
+image

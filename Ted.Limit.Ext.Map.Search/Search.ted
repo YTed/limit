@@ -1,0 +1,15 @@
+[assembly]
+Ted.Limit.Ext.Map.Search.dll
+[version]
+1.0.0.0
+[path]
+bin\debug\Ted.Limit.Ext.Map.Search.dll
+[make]
+Ted.Limit.Ext.Map.Search.SearchMake
+[key]
+Search
+[resources]
+image
+[dependency]
+bin\dll\Infragistics2.Win.UltraWinTree.v7.1.dll
+bin\dll\Infragistics2.Win.UltraWinGrid.v7.1.dll

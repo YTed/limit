@@ -1,0 +1,14 @@
+[assembly]
+Ted.Limit.Core.Empty.dll
+[version]
+1.0.0.0
+[path]
+Ted.Limit.Core.Empty.dll
+[make]
+Ted.Limit.Core.Empty.EmptyMake
+[key]
+Empty
+[resources]
+image
+[dependency]
+Ted.Limit.Core.dll

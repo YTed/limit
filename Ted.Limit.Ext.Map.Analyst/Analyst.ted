@@ -1,0 +1,12 @@
+[assembly]
+Ted.Limit.Ext.Map.Analyst.dll
+[version]
+1.0.0.0
+[path]
+bin\debug\Ted.Limit.Ext.Map.Analyst.dll
+[make]
+Ted.Limit.Ext.Map.Analyst.AnalystMake
+[key]
+Analyst
+[resources]
+image
